@@ -42,13 +42,13 @@ const Footer = () => {
                 <Link to="/">Contact Us</Link>
               </li>
               <li>
-                <Link to="/">Shipping Info</Link>
+                <Link to="/account">Shipping Info</Link>
               </li>
               <li>
-                <Link to="/">Track My Order</Link>
+                <Link to="/account">Track My Order</Link>
               </li>
               <li>
-                <Link to="/">Returns & Exchanges</Link>
+                <Link to="/account">Returns & Exchanges</Link>
               </li>
             </ul>
           </div>
