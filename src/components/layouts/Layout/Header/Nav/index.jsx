@@ -123,7 +123,7 @@ const Navbar = ({ toggleSideNav, openCartModal }) => {
       </div>
       <div className={styles.container_bottom}>
         <Link to="/">
-        <ul className={styles.links}>
+        <ul className={styles.linkslogo}>
           {/* <img className={styles.logo} src={LogoNav} alt="Logo Nav" /> */}
           <li>
           <NavLink className={styles.linklogo} to="/">
