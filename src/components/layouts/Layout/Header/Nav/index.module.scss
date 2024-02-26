@@ -231,7 +231,51 @@
     transform-origin: bottom left;
   }
 }
+.links {
+  display: none;
+  font-family: $font-f-primary;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: $ls-link;
 
+  @media (min-width: 900px) {
+    justify-content: center;
+    gap: 3rem;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .linklogo {
+    line-height: normal;
+    margin-top: 12%;
+    color: $c-link-primary;
+    
+    display: inline-block;
+    position: relative;
+
+    &:hover {
+      color: $c-link-hover;
+    }
+  }
+
+  .linklogo::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.35rem;
+    left: -0.5rem;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .linklogo:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
 .logo,
 .search_icon,
 .cart_icon,

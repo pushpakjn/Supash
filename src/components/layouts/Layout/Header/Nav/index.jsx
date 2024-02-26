@@ -10,7 +10,7 @@ import CartIcon from './CartIcon';
 
 import { Button } from 'components/common';
 
-import LogoNav from 'assets/images/supash-logo.png';
+import LogoNav from 'assets/images/cooltext452998208138780.png';
 
 import styles from './index.module.scss';
 
@@ -123,7 +123,14 @@ const Navbar = ({ toggleSideNav, openCartModal }) => {
       </div>
       <div className={styles.container_bottom}>
         <Link to="/">
-          <img className={styles.logo} src={LogoNav} alt="Logo Nav" />
+        <ul className={styles.links}>
+          {/* <img className={styles.logo} src={LogoNav} alt="Logo Nav" /> */}
+          <li>
+          <NavLink className={styles.linklogo} to="/">
+              SUPASH
+            </NavLink>
+          </li>
+        </ul>
         </Link>
         <ul className={styles.links}>
           <li>
