@@ -22,9 +22,8 @@ Check issues tab.
 - Step 1: Clone Repository and Install Packages.
 
 ```
-git clone https://github.com/jp-quintana/react-shopping-cart.git
-
-cd react-shopping-cart
+git clone https://github.com/pushpakjn/Supash.git
+cd Supash
 
 npm install
 ```
