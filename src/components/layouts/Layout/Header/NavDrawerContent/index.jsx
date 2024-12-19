@@ -36,29 +36,29 @@ const NavDrawerContent = ({ toggleSideNav }) => {
           <h2>Products</h2>
           <li>
             <Link
-              to="/collections/t-shirts"
+              to="/collections/BottomWear"
               onClick={toggleSideNav}
               className={styles.link}
             >
-              T-Shirts
+              BottomWear
             </Link>
           </li>
           <li>
             <Link
-              to="/collections/hoodies-sweatshirts"
+              to="/collections/bodyWear"
               onClick={toggleSideNav}
               className={styles.link}
             >
-              Hoodies
+              bodyWear
             </Link>
           </li>
           <li>
             <Link
-              to="/collections/accessories"
+              to="/collections/TopWear"
               onClick={toggleSideNav}
               className={styles.link}
             >
-              Accessories
+              TopWear
             </Link>
           </li>
         </ul>

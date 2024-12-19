@@ -26,7 +26,7 @@ const ProductColors = ({ id, thumbnail, selectedId }) => {
     <MediaContainer
       image={thumbnail}
       alt=""
-      onClick={shouldAddEventHandler ? handleSelectVariant : undefined}
+      // onClick={shouldAddEventHandler ? handleSelectVariant : undefined}
       containerClassName={styles.image_container}
       fillClassName={styles.image_fill}
       mediaClassName={variantStyles}

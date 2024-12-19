@@ -1,14 +1,20 @@
-import { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import { Pagination } from 'swiper';
+import { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
+import { Pagination } from "swiper";
 
-import { useProductContext } from 'hooks/useProductContext';
-import { useCart } from 'hooks/useCart';
-import { useToast } from 'hooks/useToast';
+import { useProductContext } from "hooks/useProductContext";
+import { useCart } from "hooks/useCart";
+import { useToast } from "hooks/useToast";
 
-import ProductColors from './ProductColors';
-import ProductSize from './ProductSize';
-import ProductTags from './ProductTags';
+import ProductColors from "./ProductColors";
+import ProductSize from "./ProductSize";
+import ProductTags from "./ProductTags";
+
+import img1 from "./colors/image-1.jpeg";
+import img2 from "./colors/navy-blue.jpeg";
+import img3 from "./colors/dark-grey.jpeg";
+import img4 from "./colors/olive-green.png";
+import img5 from "./colors/air-force.png";
 
 import {
   Button,
@@ -16,13 +22,14 @@ import {
   Slider,
   MediaContainer,
   NotFound,
-} from 'components/common';
+} from "components/common";
 
-import { formatPrice } from 'helpers/format';
+import { formatPrice } from "helpers/format";
 
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 const ProductPage = () => {
+  const img = [img1, img2, img3, img4, img5];
   const {
     productIsReady,
     selectedProduct,
@@ -46,7 +53,7 @@ const ProductPage = () => {
       type: selectedProduct.type,
       color: selectedVariant.color,
       price: selectedVariant.variantPrice,
-      slug: selectedProduct.slug + '-' + selectedVariant.color,
+      slug: selectedProduct.slug + "-" + selectedVariant.color,
       image: selectedVariant.images[0].src,
     });
     setNotify(true);
@@ -61,7 +68,7 @@ const ProductPage = () => {
             image: selectedVariant.images[0].src,
             message: `${selectedProduct.model} ${selectedProduct.type} - ${
               selectedVariant.color
-            } ${selectedSize ? ` - ${selectedSize.toUpperCase()}` : ''}`,
+            } ${selectedSize ? ` - ${selectedSize.toUpperCase()}` : ""}`,
           },
         });
       } else if (error) {
@@ -86,10 +93,10 @@ const ProductPage = () => {
 
   const buttonContent = singleSize
     ? singleSize.quantity > 0
-      ? 'ADD TO BAG'
-      : 'OUT OF STOCK'
+      ? "ADD TO BAG"
+      : "OUT OF STOCK"
     : selectedSize.length === 0
-    ? 'SELECT SIZE'
+    ? "SELECT SIZE"
     : `ADD ${selectedSize.toUpperCase()} TO BAG`;
 
   const buttonStyles = `
@@ -113,7 +120,7 @@ const ProductPage = () => {
     : false;
 
   const isBigScreen = useMediaQuery({
-    query: '(min-width: 1024px)',
+    query: "(min-width: 1024px)",
   });
 
   return (
@@ -208,10 +215,10 @@ const ProductPage = () => {
                     <div className={styles.controls_wrapper}>
                       <div className={styles.variants_container}>
                         <p className={styles.number_of_colors}>
-                          {selectedProduct.variants.length}{' '}
-                          {selectedProduct.variants.length > 1
-                            ? 'Colors'
-                            : 'Color'}{' '}
+                          {selectedProduct.variants.length}{" "}
+                          {selectedProduct.variants.length > 0
+                            ? "Colors"
+                            : "Color"}{" "}
                           <span>| {selectedVariant.color}</span>
                         </p>
                         <div className={styles.variants_wrapper}>
@@ -325,21 +332,32 @@ const ProductPage = () => {
                   <div className={styles.controls_wrapper}>
                     <div className={styles.variants_container}>
                       <p className={styles.number_of_colors}>
-                        {selectedProduct.variants.length}{' '}
-                        {selectedProduct.variants.length > 1
-                          ? 'Colors'
-                          : 'Color'}{' '}
+                        {/* {selectedProduct.variants.length}{' '} */}
+                        {selectedProduct.variants.length > 0
+                          ? "Colors"
+                          : "Color"}{" "}
                         <span>| {selectedVariant.color}</span>
                       </p>
                       <div className={styles.variants_wrapper}>
-                        {selectedProduct.variants.map((variant) => (
+                        {Array.from({ length: selectedVariant.color[0] }).map(
+                          (_, index) => (
+                            <ProductColors
+                              key={index}
+                              id={index}
+                              thumbnail={img[index]}
+                              selectedId={selectedProduct.productId}
+
+                            />
+                          )
+                        )}
+                        {/* {selectedProduct.variants.map((variant) => (
                           <ProductColors
                             key={variant.variantId}
                             id={variant.variantId}
                             thumbnail={variant.images[0].src}
                             selectedId={selectedVariant.variantId}
                           />
-                        ))}
+                        ))} */}
                       </div>
                     </div>
 

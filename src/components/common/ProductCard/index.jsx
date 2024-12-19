@@ -71,34 +71,34 @@ const ProductCard = ({
   }, []);
 
   const handlePickVariant = ({ variantId }) => {
-    const selectedVariant = allVariants.find(
-      (variant) => variant.variantId === variantId
-    );
+    // const selectedVariant = allVariants.find(
+    //   (variant) => variant.variantId === variantId
+    // );
 
-    setCurrentVariant({
-      variantId,
-      color: selectedVariant.color,
-      currentPrice: selectedVariant.price,
-      discount: selectedVariant.discount,
-      slides: selectedVariant.slides,
-      skus: selectedVariant.skus,
-      isSoldOut: selectedVariant.isSoldOut,
-    });
+    // setCurrentVariant({
+    //   variantId,
+    //   color: selectedVariant.color,
+    //   currentPrice: selectedVariant.price,
+    //   discount: selectedVariant.discount,
+    //   slides: selectedVariant.slides,
+    //   skus: selectedVariant.skus,
+    //   isSoldOut: selectedVariant.isSoldOut,
+    // });
   };
 
   const handleAddItem = async ({ skuId, size }) => {
-    await addItem({
-      skuId,
-      productId: productId,
-      variantId: currentVariant.variantId,
-      size,
-      model: model,
-      type: type,
-      color: currentVariant.color,
-      price: currentVariant.currentPrice,
-      slug: currentVariant.slides[0].url,
-      image: currentVariant.slides[0].src,
-    });
+    // await addItem({
+    //   skuId,
+    //   productId: productId,
+    //   variantId: currentVariant.variantId,
+    //   size,
+    //   model: model,
+    //   type: type,
+    //   color: currentVariant.color,
+    //   price: currentVariant.currentPrice,
+    //   slug: currentVariant.slides[0].url,
+    //   image: currentVariant.slides[0].src,
+    // });
   };
 
   // TODO: udpate
@@ -235,12 +235,13 @@ const ProductCard = ({
                   {model} {type}
                 </li>
                 <li className={styles.color}>
-                  <span className={styles.text}>{currentVariant.color}</span>
-                  {numberOfVariants > 1 && (
+                  <span className={styles.tag}>{currentVariant.color}</span>
+                  {/* <span className={styles.text}>{currentVariant.color}</span> */}
+                  {/* {numberOfVariants > 1 && (
                     <span
                       className={styles.tag}
                     >{`${numberOfVariants} colors`}</span>
-                  )}
+                  )} */}
                 </li>
                 <li className={styles.price}>
                   {currentVariant.currentPrice < actualPrice ? (

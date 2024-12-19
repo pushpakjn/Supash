@@ -1,6 +1,6 @@
 [
   {
-    "collection": "accessories",
+    "collection": "TopWear",
     "fit": "relaxed",
     "description": "adjustable cap",
     "model": "baires",
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "collection": "t-shirts",
+    "collection": "BottomWear",
     "fit": "oversized",
     "description": "oversized tee",
     "model": "de gira",
@@ -362,7 +362,7 @@
     ]
   },
   {
-    "collection": "hoodies-sweatshirts",
+    "collection": "bodyWear",
     "fit": "oversized",
     "description": "oversized hoodie",
     "model": "de gira",
@@ -603,7 +603,7 @@
     ]
   },
   {
-    "collection": "t-shirts",
+    "collection": "BottomWear",
     "fit": "oversized",
     "description": "oversized tee",
     "model": "ojos",
@@ -844,13 +844,13 @@
     ]
   },
   {
-    "collection": "hoodies-sweatshirts",
+    "collection": "bodyWear",
     "fit": "oversized",
-    "description": "oversized sweatshirt",
+    "description": "oversized sweaBottomWear",
     "model": "flaakko",
     "price": 56,
-    "slug": "flaakko-sweatshirt",
-    "type": "sweatshirt",
+    "slug": "flaakko-sweaBottomWear",
+    "type": "sweaBottomWear",
     "variants": [
       {
         "color": "black",
