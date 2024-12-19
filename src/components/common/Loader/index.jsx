@@ -5,7 +5,7 @@ import MediaContainer from '../MediaContainer';
 
 import styles from './index.module.scss';
 
-import LoaderImage from 'assets/images/loader.png';
+import LoaderImage from 'assets/images/supash-loader.jpeg';
 
 const Loader = ({
   noPortal,
