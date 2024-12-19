@@ -1,7 +1,7 @@
 import { MediaContainer } from 'components/common';
 
-import Video from 'assets/videos/hero.mp4';
-import LogoHero from 'assets/images/logo-hero.png';
+import Video from 'assets/videos/supash-video.mp4';
+import LogoHero from 'assets/images/supash-logo.png';
 
 import styles from './index.module.scss';
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
         />
         <div className={styles.content}>
           <div className={styles.logo_wrapper}>
-            <img src={LogoHero} alt="Hero Logo" className={styles.logo} />
+            {/* <img src={LogoHero} alt="Hero Logo" className={styles.logo} /> */}
           </div>
         </div>
       </div>

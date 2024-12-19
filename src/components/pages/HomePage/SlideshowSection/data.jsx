@@ -6,6 +6,7 @@ import banner2 from 'assets/images/sportswear.avif';
 import banner3 from 'assets/images/banner-redsuit.png';
 import banner4 from 'assets/images/banner-wear-sports.png';
 import banner5 from 'assets/images/banner-sale.png';
+import banner6 from 'assets/images/banner-sale-small.png';
 
 
 import Slide4 from 'assets/images/productos-hoodie-de-gira-blanco-2.jpg';
@@ -29,15 +30,15 @@ export const BIG_SCREEN_SLIDES = [
 
 export const SMALL_SCREEN_SLIDES = [
   {
-    src: Slide4,
+    src: banner6,
     id: 1,
   },
   {
-    src: Slide5,
+    src: banner4,
     id: 2,
   },
   {
-    src: Slide6,
+    src: banner3,
     id: 3,
   },
 ];
