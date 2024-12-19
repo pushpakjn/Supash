@@ -1,6 +1,6 @@
 import { MediaContainer } from 'components/common';
 
-import Video from 'assets/videos/supash-video.mp4';
+import Video from 'assets/videos/supash-banner-video.mp4';
 import LogoHero from 'assets/images/supash-logo.png';
 
 import styles from './index.module.scss';
