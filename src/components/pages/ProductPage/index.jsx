@@ -215,7 +215,24 @@ const ProductPage = () => {
                     <div className={styles.controls_wrapper}>
                       <div className={styles.variants_container}>
                         <p className={styles.number_of_colors}>
-                          {selectedProduct.variants.length}{" "}
+                        {selectedProduct.variants.length > 0
+                          ? "Colors"
+                          : "Color"}{" "}
+                        <span>| {selectedVariant.color}</span>
+                      </p>
+                      <div className={styles.variants_wrapper}>
+                        {Array.from({ length: selectedVariant.color[0] }).map(
+                          (_, index) => (
+                            <ProductColors
+                              key={index}
+                              id={index}
+                              thumbnail={img[index]}
+                              selectedId={selectedProduct.productId}
+
+                            />
+                          )
+                        )}
+                          {/* {selectedProduct.variants.length}{" "}
                           {selectedProduct.variants.length > 0
                             ? "Colors"
                             : "Color"}{" "}
@@ -229,7 +246,7 @@ const ProductPage = () => {
                               thumbnail={variant.images[0].src}
                               selectedId={selectedVariant.variantId}
                             />
-                          ))}
+                          ))} */}
                         </div>
                       </div>
                       {!singleSize && (
