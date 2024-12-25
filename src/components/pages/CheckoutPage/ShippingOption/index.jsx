@@ -20,7 +20,7 @@ const ShippingOption = () => {
     isLoading,
   } = useCheckout();
 
-  const expiditedCost = 15;
+  const expiditedCost = 150;
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -42,7 +42,7 @@ const OrderSummary = () => {
       shipping_option = '(standard)';
       shipping_option_className = styles.shipping_option;
     } else {
-      shipping_price = 15;
+      shipping_price = 150;
       shipping_option = '(expedited)';
       shipping_option_className = styles.shipping_option;
     }
