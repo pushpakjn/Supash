@@ -84,7 +84,7 @@ const OrderContent = ({
                 </p>
                 <p className={styles.size}>{item.size?.toUpperCase()}</p>
               </div>
-              <p className={styles.price}>${formatPrice(item.price)}</p>
+              <p className={styles.price}><span>&#8377;</span>{formatPrice(item.price)}</p>
             </div>
           ))}
         </div>
@@ -93,15 +93,15 @@ const OrderContent = ({
         <ul>
           <li>
             <span>Subtotal</span>
-            <span>$ {formatPrice(subtotal)}</span>
+            <span><span>&#8377;</span> {formatPrice(subtotal)}</span>
           </li>
           <li>
             <span>Shipping</span>
-            <span>$ {formatPrice(shippingCost)} </span>
+            <span><span>&#8377;</span> {formatPrice(shippingCost)} </span>
           </li>
           <li>
             <span>Total</span>
-            <span>$ {formatPrice(total)} </span>
+            <span><span>&#8377;</span> {formatPrice(total)} </span>
           </li>
         </ul>
       </div>

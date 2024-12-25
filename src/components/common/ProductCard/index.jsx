@@ -247,14 +247,14 @@ const ProductCard = ({
                   {currentVariant.currentPrice < actualPrice ? (
                     <>
                       <span className={styles.discounted_price}>
-                        ${formatPrice(currentVariant.currentPrice)}
+                      <span>&#8377;</span>{formatPrice(currentVariant.currentPrice)}
                       </span>
                       <span className={styles.crossed_price}>
-                        ${formatPrice(actualPrice)}
+                      <span>&#8377;</span>{formatPrice(actualPrice)}
                       </span>
                     </>
                   ) : (
-                    <span>${formatPrice(currentVariant.currentPrice)}</span>
+                    <span><span>&#8377;</span>{formatPrice(currentVariant.currentPrice)}</span>
                   )}
                 </li>
               </>

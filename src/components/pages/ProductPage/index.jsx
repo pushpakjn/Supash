@@ -200,14 +200,14 @@ const ProductPage = () => {
                         selectedProduct.price ? (
                           <>
                             <span className={styles.discounted_price}>
-                              ${formatPrice(selectedVariant.variantPrice)}
+                            ₹{formatPrice(selectedVariant.variantPrice)}
                             </span>
                             <span className={styles.crossed_price}>
-                              ${formatPrice(selectedProduct.price)}
+                            ₹{formatPrice(selectedProduct.price)}
                             </span>
                           </>
                         ) : (
-                          <span>${formatPrice(selectedProduct.price)}</span>
+                          <span><span>&#8377;</span>{formatPrice(selectedProduct.price)}</span>
                         )}
                       </div>
                     </div>
@@ -321,14 +321,14 @@ const ProductPage = () => {
                         selectedProduct.price ? (
                           <>
                             <span className={styles.discounted_price}>
-                              ${formatPrice(selectedVariant.variantPrice)}
+                            <span>&#8377;</span>{formatPrice(selectedVariant.variantPrice)}
                             </span>
                             <span className={styles.crossed_price}>
-                              ${formatPrice(selectedProduct.price)}
+                            <span>&#8377;</span>{formatPrice(selectedProduct.price)}
                             </span>
                           </>
                         ) : (
-                          <span>${formatPrice(selectedProduct.price)}</span>
+                          <span><span>&#8377;</span>{formatPrice(selectedProduct.price)}</span>
                         )}
                       </div>
                     </div>

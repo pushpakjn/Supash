@@ -19,7 +19,7 @@ const ProductFilterValues = ({
         <div className={styles.group} key={property}>
           {property === 'price' ? (
             <div onClick={handleResetPriceRange} className={styles.condition}>
-              {`$${conditions[0]} - $${conditions[1]}`}
+              {`₹${conditions[0]} - ₹${conditions[1]}`}
               <div className={styles.remove}>
                 <FaTimes />
               </div>

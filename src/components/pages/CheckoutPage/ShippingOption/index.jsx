@@ -79,7 +79,7 @@ const ShippingOption = () => {
                   />
                   <span>Expedited (2 - 3 Bus. Days)</span>
                 </label>
-                <p>${formatPrice(expiditedCost)}</p>
+                <p><span>&#8377;</span>{formatPrice(expiditedCost)}</p>
               </div>
             </form>
             <div className={styles.form_controls}>

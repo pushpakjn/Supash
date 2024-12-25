@@ -54,7 +54,7 @@ const CartPage = () => {
       <>
         <div className={styles.checkout_wrapper}>
           <p className={styles.total}>
-            Total: <span>${addAllItemsPrice(items)}</span>
+            Total: <span><span>&#8377;</span>{addAllItemsPrice(items)}</span>
           </p>
           <Button to="/checkout" className={styles.checkout_button}>
             Checkout
