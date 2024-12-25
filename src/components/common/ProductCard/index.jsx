@@ -87,18 +87,18 @@ const ProductCard = ({
   };
 
   const handleAddItem = async ({ skuId, size }) => {
-    // await addItem({
-    //   skuId,
-    //   productId: productId,
-    //   variantId: currentVariant.variantId,
-    //   size,
-    //   model: model,
-    //   type: type,
-    //   color: currentVariant.color,
-    //   price: currentVariant.currentPrice,
-    //   slug: currentVariant.slides[0].url,
-    //   image: currentVariant.slides[0].src,
-    // });
+    await addItem({
+      skuId,
+      productId: productId,
+      variantId: currentVariant.variantId,
+      size,
+      model: model,
+      type: type,
+      color: currentVariant.color,
+      price: currentVariant.currentPrice,
+      slug: currentVariant.slides[0].url,
+      image: currentVariant.slides[0].src,
+    });
   };
 
   // TODO: udpate
@@ -195,6 +195,7 @@ const ProductCard = ({
                   mediaContainerClassName={
                     styles.other_variants_image_container
                   }
+                  
                   imageFillClassName={styles.other_variants_image_fill}
                   imageClassName={styles.other_variants_image}
                 />
