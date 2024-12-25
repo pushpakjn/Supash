@@ -15,7 +15,7 @@ import OrderSummary from './OrderSummary';
 
 import { Loader } from 'components/common';
 
-import logo from 'assets/images/supash-logo.png';
+import logo from 'assets/images/supash-logo-Photoroom.png';
 
 import styles from './index.module.scss';
 

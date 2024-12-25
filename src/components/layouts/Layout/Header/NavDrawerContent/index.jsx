@@ -75,7 +75,7 @@ const NavDrawerContent = ({ toggleSideNav }) => {
           </li>
         </ul>
       </div>
-      <div className={styles.products_container}>
+      {/* <div className={styles.products_container}>
         <Slider
           slides={slides}
           slidesPerView={1}
@@ -95,7 +95,7 @@ const NavDrawerContent = ({ toggleSideNav }) => {
           imageFillClassName={styles.image_fill}
           imageClassName={styles.image}
         />
-      </div>
+      </div> */}
       <div className={styles.info_container}>
         {isVerified && <h2 className={styles.title}>Welcome back, {name}!</h2>}
         <ul className={styles.links_list}>
