@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import {
   FaInstagram,
   FaTwitterSquare,
-  FaTiktok,
+  // FaTiktok,
   FaFacebookF,
   FaYoutube,
 } from 'react-icons/fa';
@@ -73,10 +73,10 @@ const Footer = () => {
               rel="noreferrer"
             >
               <FaInstagram />
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noreferrer">
-              <FaTiktok />
-            </a>
+              </a>
+              {/* <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                <FaTiktok />
+              </a> */}
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <FaTwitterSquare />
             </a>
