@@ -180,12 +180,12 @@ const NavDrawerContent = ({ toggleSideNav }) => {
         </ul>
       </div>
       <div className={styles.socials_container}>
-        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/supash_sports_grp/profilecard/?igsh=Yng2Z292MGFyaDFm" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+        {/* <a href="https://tiktok.com" target="_blank" rel="noreferrer">
           <FaTiktok />
-        </a>
+        </a> */}
         <a href="https://twitter.com" target="_blank" rel="noreferrer">
           <FaTwitterSquare />
         </a>
