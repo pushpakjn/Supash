@@ -68,7 +68,7 @@ const Footer = () => {
           {isBigScreen && <Newsletter />}
           <div className={styles.socials}>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/supash_sports_grp/profilecard/?igsh=Yng2Z292MGFyaDFm"
               target="_blank"
               rel="noreferrer"
             >
